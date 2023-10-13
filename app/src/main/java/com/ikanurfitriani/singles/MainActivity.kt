@@ -155,7 +155,7 @@ fun SinglesCard(singel: Singel, modifier: Modifier = Modifier) {
 @Composable
 fun SinglePreview() {
     SinglesTheme {
-        val singel = Singel(R.string.river, 321, R.drawable.jkt48river)
+        val singel = Singel(R.string.river, 11052013, R.drawable.jkt48river)
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Center,
