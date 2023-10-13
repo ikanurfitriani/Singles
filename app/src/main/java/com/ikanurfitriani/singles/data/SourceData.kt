@@ -3,7 +3,7 @@ package com.ikanurfitriani.singles.data
 import com.ikanurfitriani.singles.R
 import com.ikanurfitriani.singles.model.Singel
 
-// Menampilkan list dari singel JKT48
+// Menampilkan daftar teks dan gambar dari singel JKT48
 object SourceData {
     val singels = listOf(
         Singel(R.string.river, 11052013, R.drawable.jkt48river),

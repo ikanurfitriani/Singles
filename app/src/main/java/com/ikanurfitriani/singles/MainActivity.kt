@@ -65,7 +65,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-// Blok fungsi ArtGalleryApp untuk menampilkan semua bagian halaman
+// Blok fungsi SinglesGrid untuk menampilkan semua bagian halaman
 fun SinglesGrid(modifier: Modifier = Modifier) {
     Column(
         modifier = modifier
@@ -89,13 +89,13 @@ fun SinglesGrid(modifier: Modifier = Modifier) {
             textAlign = TextAlign.Center, // Teks berada di tengah
         )
 
-
-        // Untuk menampilkan daftar elemen dengan tata letak grid vertikal
+        // Untuk menampilkan daftar elemen dengan tata letak grid vertikal dengan 2 kolom
         LazyVerticalGrid(
             columns = GridCells.Fixed(2),
             verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_small)),
             horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_small))
         ) {
+            // Mengisi grid dengan daftar singel dari data singel
             items(SourceData.singels) { topic ->
                 SinglesCard(topic)
             }
