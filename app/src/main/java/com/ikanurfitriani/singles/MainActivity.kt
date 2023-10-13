@@ -106,7 +106,9 @@ fun SinglesGrid(modifier: Modifier = Modifier) {
 
 
 @Composable
+// Blok fungsi SinglesCard untuk mengatur kartu
 fun SinglesCard(singel: Singel, modifier: Modifier = Modifier) {
+    // Untuk membuat kartu visual
     Card {
         Row {
             Box {
